@@ -109,7 +109,7 @@ The code supports two testing modes:
 2. **Strict Testing**: Only unseen classes
 
 ## Notes
-
+- This code was originally developed in Python 3.6
 - Model automatically saves when achieving best accuracy
 - Uses mixed training/eval mode for uncertainty estimation
 - Implements episodic training for few-shot learning
