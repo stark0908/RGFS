@@ -2,6 +2,7 @@
 Configuration file for RGFS (Reconstruction-Guided Few-Shot) learning
 """
 
+
 class Config:
     # Data configuration
     DATA_PATH = "/home/23dcs505/data/2750"
