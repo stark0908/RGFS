@@ -1,6 +1,6 @@
 # RGFS: Reconstruction-Guided Few-Shot Learning
 
-> **Note**: This codebase has been cleaned and refactored with AI assistance for improved readability, modularity, and maintainability. The implementation follows best practices with clear separation of concerns across multiple well-documented modules.
+> **Note**: This codebase has been cleaned with AI assistance for improved readability, modularity, and maintainability. The implementation follows best practices with clear separation of concerns across multiple well-documented modules.
 
 A modular implementation of Reconstruction-Guided Few-Shot Learning with prototypical networks and masked autoencoding.
 
