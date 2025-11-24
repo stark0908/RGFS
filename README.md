@@ -4,7 +4,7 @@
 
 A modular implementation of Reconstruction-Guided Few-Shot Learning with prototypical networks and masked autoencoding.
 
-You can get dataset from here: [**Download Dataset →**](https://www.kaggle.com/datasets/nilesh789/eurosat-rgb)
+You can get dataset from here: [**Download Dataset**](https://www.kaggle.com/datasets/nilesh789/eurosat-rgb)
 
 ## Project Structure
 
