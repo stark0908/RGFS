@@ -112,10 +112,11 @@ loss, acc, recon_loss, psnr = trainer.train_epoch(train_loader, epoch=0)
 1. **Cross-Entropy Loss**: Few-shot classification
 2. **Reconstruction Loss**: Masked region reconstruction (MSE + L1)
 3. **Variance Loss**: Prediction stability across multiple passes
+4. **Triplet Loss**: Enforces embedding separation between anchor–positive–negative samples
 
 Combined as:
 ```
-Total Loss = RECON_WEIGHT × Recon Loss + CE Loss + ALPHA × Variance Loss
+Total Loss = RECON_WEIGHT × Recon Loss + CE Loss + ALPHA × Variance Loss + Triplet Loss
 ```
 
 ## Key Parameters
