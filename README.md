@@ -6,6 +6,9 @@ A modular implementation of Reconstruction-Guided Few-Shot Learning with prototy
 
 You can get dataset from here: [**Download Dataset**](https://www.kaggle.com/datasets/nilesh789/eurosat-rgb)
 
+![Model Architecture](Figure/RGFS_Architecture.png)
+
+
 ## Project Structure
 
 ```
