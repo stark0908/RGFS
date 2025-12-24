@@ -2,9 +2,20 @@
 
 > **Note**: This codebase has been cleaned with AI assistance for improved readability, modularity, and maintainability. The implementation follows best practices with clear separation of concerns across multiple well-documented modules.
 
-A modular implementation of Reconstruction-Guided Few-Shot Learning with prototypical networks and masked autoencoding.
+A concise implementation of Reconstruction-Guided Few-Shot Learning (RGFS) combining prototypical networks with masked autoencoding — focused on clarity and reproducibility.
 
 You can get dataset from here: [**Download Dataset**](https://www.kaggle.com/datasets/nilesh789/eurosat-rgb)
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Results Visualizations](#results-visualizations)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ![Model Architecture](Figure/RGFS_Architecture.png)
 
@@ -12,14 +23,14 @@ You can get dataset from here: [**Download Dataset**](https://www.kaggle.com/dat
 ## Project Structure
 
 ```
-├── config_file.py      # Configuration parameters
-├── utils_file.py       # Utility functions (prototypes, losses, metrics)
-├── dataset_file.py     # Dataset classes and data utilities
-├── data_loader_file.py # Data loading and preparation
-├── model_file.py       # Model architectures (Encoder, Decoder, MAE)
-├── trainer_file.py     # Training and evaluation logic
-├── main_file.py        # Main training script
-└── readme_file.md      # This file
+├── config.py           # Configuration parameters
+├── utils.py            # Utility functions (prototypes, losses, metrics)
+├── dataset.py          # Dataset classes and data utilities
+├── data_loader.py      # Data loading and preparation
+├── model.py            # Model architectures (Encoder, Decoder, MAE)
+├── trainer.py          # Training and evaluation logic
+├── main.py             # Main training script
+└── README.md           # This file
 ```
 
 ## Features
@@ -31,7 +42,43 @@ You can get dataset from here: [**Download Dataset**](https://www.kaggle.com/dat
 - **Variance Regularization**: Prediction stability loss
 - **DropBlock Regularization**: Structured dropout for CNNs
 
-## Requirements
+## Installation
+
+### 1) Create a virtual environment
+
+```bash
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Unix/macOS:
+source .venv/bin/activate
+```
+
+### 2) Install dependencies
+
+```bash
+pip install -U pip
+pip install torch torchvision numpy tqdm matplotlib seaborn
+# or, if you have a requirements file:
+# pip install -r requirements.txt
+```
+
+## Quick Start
+
+- Run training with the default config:
+
+```bash
+python main.py
+```
+
+- Reproduce the analysis/plots:
+
+```bash
+# open the notebook with Jupyter or VS Code and execute the cells
+jupyter notebook Notebooks/RGFS_3W5S.ipynb
+```
+
+## Dependencies
 
 ```bash
 torch
@@ -189,13 +236,13 @@ Based on the reference notebook (RGFS_3W5S.ipynb):
 
 ## File Descriptions
 
-- **config_file.py**: All hyperparameters and paths
-- **dataset_file.py**: FewShotDataset class with block masking
-- **data_loader_file.py**: Data preparation and loading utilities
-- **model_file.py**: DropBlock2D, Encoder, Decoder, MaskedAutoencoder
-- **trainer_file.py**: RGFSTrainer class with train/eval methods
-- **utils_file.py**: Prototypes, classification, losses, metrics
-- **main_file.py**: Main training loop and orchestration
+- **config.py**: All hyperparameters and paths
+- **dataset.py**: FewShotDataset class with block masking
+- **data_loader.py**: Data preparation and loading utilities
+- **model.py**: DropBlock2D, Encoder, Decoder, MaskedAutoencoder
+- **trainer.py**: RGFSTrainer class with train/eval methods
+- **utils.py**: Prototypes, classification, losses, metrics
+- **main.py**: Main training loop and orchestration
 
 ## Citation
 
