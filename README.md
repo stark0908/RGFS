@@ -38,6 +38,8 @@ torch
 torchvision
 numpy
 tqdm
+matplotlib
+seaborn
 ```
 
 ## Configuration
@@ -137,7 +139,6 @@ Total Loss = RECON_WEIGHT × Recon Loss + CE Loss + ALPHA × Variance Loss + Tri
 
 ## Dataset
 
-- **Path**: `/home/23dcs505/data/2750`
 - **Split**: 80% train, 20% test
 - **Classes**: 10 total classes
   - Training: 5 randomly selected classes
@@ -169,6 +170,13 @@ Based on the reference notebook (RGFS_3W5S.ipynb):
 - **Test Accuracy**: ~87-92% (varies by epoch)
 - **Reconstruction PSNR**: ~9.3-9.6 dB by epoch 20
 - **Training Time**: ~10,000 seconds for 20 epochs (hardware dependent)
+
+## Results Visualizations
+
+![Training Curves](Figure/rgfs_few_shot_comparison.png)
+
+**Figure:** Training curves (accuracy & loss) for the 3-way 5-shot setup. To reproduce these figures, open `Notebooks/RGFS_3W5S.ipynb` and run the plotting cells (requires `matplotlib` and `seaborn`), or enable metric logging in `trainer.py` and use the plotting utilities in `utils.py`.
+
 
 ## Notes
 
