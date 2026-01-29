@@ -40,7 +40,7 @@ class Config:
     SEED = 42
     
     # Model saving
-    MODEL_SAVE_PATH = "/home/23dcs505/5w5s_resnet.pth"
+    MODEL_SAVE_PATH = "~/5w5s_resnet.pth"
     
     # Image normalization (ImageNet stats)
     IMAGE_MEAN = [0.485, 0.456, 0.406]
